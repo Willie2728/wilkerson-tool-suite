@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+node_modules/
+public/generated/
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: wilkerson-tool-suite
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: WILKERSON_BIND
+        value: 0.0.0.0
+      - key: WILKERSON_ACCESS_PIN
+        generateValue: true
